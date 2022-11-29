@@ -1,0 +1,23 @@
+.carousel slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 500px;
+    width: 800px;
+    }
+
+.rond {
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+}

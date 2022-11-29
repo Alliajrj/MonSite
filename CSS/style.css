@@ -1,0 +1,123 @@
+@import url(grid.css);
+@import url(button.css);
+@import url(images.css);
+@import url(grid.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic', Arial,  sans-serif;
+    background-color: cornsilk;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: cornsilk;
+    border-bottom: 1px solid darkslategray;
+    padding: 5px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:800px) {
+   
+    .header {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header > div {
+        width: 100%;
+    }
+    nav {
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+header nav li {
+    color:black;
+    list-style-type: none;
+    transition: 0.2s;
+}
+
+header nav li:hover {
+    color: gray;
+}
+
+.titre, h1 {
+    color: black;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10vw;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:500px) {
+
+    .wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ }
+
+ @keyframes example {
+    0%   {background-color:cornsilk; left:0px; top:0px;}
+    25%  {background-color: darkkhaki; left:200px; top:0px;}
+    50%  {background-color:darkcyan; left:200px; top:200px;}
+    75%  {background-color:darkslategray; left:0px; top:200px;}
+    100% {background-color: palevioletred; left:0px; top:0px;}
+ }
+
+ .rond {
+    position: relative;
+    background-color: cornsilk;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+

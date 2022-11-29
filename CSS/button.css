@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    border-radius: 5px;
+    margin: auto;
+    width: 150px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: darkslategray;
+    transition: 0.2s ease-in-out;
+}
+
+.button :hover {
+    border: 1px solid darkslategray;
+    background-color: cornsilk;
+    color: darkslategray;
+}
